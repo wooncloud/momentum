@@ -2,3 +2,6 @@
     display: none;
 }
 
+.bg-image {
+    background-size: cover;
+}
