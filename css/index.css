@@ -4,4 +4,21 @@
 
 .bg-image {
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock {
+    font-size: 8rem;
+    text-align: center;
+    color: white;
+}
+
+#quote {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
 }
