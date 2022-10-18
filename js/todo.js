@@ -30,7 +30,7 @@ function paintTodo(newTodoObj) {
 
     li.id = newTodoObj.id;
     span.innerText = newTodoObj.text;
-    button.innerText = "❌";
+    button.innerText = "X";
     button.addEventListener("click", onClickDeleteDoto);
     li.appendChild(span);
     li.appendChild(button);

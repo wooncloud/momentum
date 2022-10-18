@@ -22,11 +22,36 @@ body {margin: 0; padding: 0;}
     text-align: center;
     color: white;
 }
-
-#greeting {
+#loginForm, #greeting {
     position: absolute;
     top: 250px;
 }
+#loginForm > input[type=text] {
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 2px black;
+    background-color: #0008;
+    color: white;
+    padding: 2px 6px;
+}
+#loginForm > input[type=submit] {
+    width: 90px;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #1d6bba;
+    box-shadow: 0 0 10px 2px black;
+    cursor: pointer;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 14px;
+}
+#loginForm > input[type=submit]:hover {
+    background-color: #41a0ff;
+}
+
 
 #quote {
     font-size: 2rem;
@@ -41,11 +66,14 @@ body {margin: 0; padding: 0;}
     min-width: 300px;
     height: 30px;
     border-radius: 4px;
-    border: 1px solid dimgray;
+    border: 1px solid white;
     box-shadow: 0 0 10px 2px black;
+    background-color: #0008;
+    color: white;
+    padding: 2px 6px;
 }
 #todoForm > input:hover {
-    border-color: dodgerblue;
+    border-color: #fff8;
 }
 
 .todo-wrap {
@@ -57,12 +85,13 @@ body {margin: 0; padding: 0;}
     width: 300px;
     overflow-y: auto;
     margin: 10px 0 0 0;
-    border: 1px solid #0007;
+    border: 1px solid #0009;
     border-radius: 4px;
+    background-color: #0008;
 }
 .list-wrap::-webkit-scrollbar       {background-color:#fff0;width:5px}
 .list-wrap::-webkit-scrollbar-track {background-color:#fff0}
-.list-wrap::-webkit-scrollbar-thumb {background-color:#0003;border-radius:16px;border:4px solid #fff0}
+.list-wrap::-webkit-scrollbar-thumb {background-color:#fff5;border-radius:16px;border:4px solid #fff0}
 
 ul#todoList{
     padding-left: 40px;
@@ -73,11 +102,12 @@ ul#todoList > li {
     text-shadow: -3px 0 5px black, 3px 0 5px black, 3px 0 5px black, 0 -3px 5px black;
     list-style: decimal;
     word-break: break-all;
+    margin: 2px 0;
 }
 
 ul#todoList > li > button {
-    background-color: white;
-    border: 1px solid black;
+    background-color: #0008;
+    border: 1px solid #fff8;
     border-radius: 4px;
     width: 24px;
     height: 24px;
@@ -85,9 +115,11 @@ ul#todoList > li > button {
     font-size: x-small;
     padding: 0;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
 ul#todoList > li > button:hover {
-    background-color: lightgray;
+    background-color: #000;
 }
 
 #weather {
